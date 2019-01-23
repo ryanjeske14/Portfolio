@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+  
+}
+
+nav,footer {
+  padding: 2% 0;
+  background-color: #aaa;
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background-color: white;
+  height:50px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  }
+
+  main {
+    padding-bottom: 50px;
+  }
+  
+header {
+  padding-top: 60px;
+  padding-bottom: 20%;
+  color: white;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.hero {
+  background-image: url(images/hero_background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.subtitle {
+  margin-bottom: 100px;
+  margin-top: 3%;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 130%;
+  opacity: 0.8;
+  text-align: center;
+}
+
+h3 {
+  font-weight: lighter;
+  font-size: 130%;
+  text-align: center;
+}
+
+h5 {
+  font-weight: lighter;
+  font-size: 93%;
+  opacity: 0.8;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: .5px;
+  color:white; 
+  background-color: white; 
+  width: 17%;
+  opacity: 0.7;
+}
+
+section {
+  min-height: 200px;
+  padding: 2% 0;
+  background-color: #bbb;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+section:nth-child(even) {
+  background-color: #ddd;
+}
+
+.sectionHeader {
+  margin-top:10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.bioSection {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.bio, .projectDescription, .contactBlurb {
+  font-size: 16px;
+  text-align: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+
+}
+
+.hamburger {
+  width: 25px;
+  height: 30px;
+}
+
+.profpic {
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px auto 12px auto;
+ /* margin-left: auto;
+  margin-right: auto;*/
+
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.skillHeader, .projectHeader {
+  font-weight: lighter;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.skillSymbol {
+  width: 100px;
+  height: 100px;
+}
+
+.skillList {
+  display: inline-block;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.projectScreenshot {
+  width: 300px;
+}
+
+.screenshotContainer {
+  width: 300px;
+  align-self: center;
+}
+
+.languageList {
+  display: flex;
+  justify-content: space-around;
+}
+
+.languageSymbol {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+}
+
+.projectButtons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button {
+  background-color: rgb(110, 110, 110);  
+  border-radius: 5px;
+  color: white;
+  padding: .5em;
+  text-decoration: none;
+}
+
+.contactMethods {
+  list-style: none;
+}
+
+.contactMethod {
+  margin-top: 10px;
+}
+
+.contactLink, .contactSymbol {
+  vertical-align: middle;
+}
+
+.contactLink {
+  text-decoration: none;
+  color: black;
+}
+
+.contactSymbol {
+  display: inline-block;
+  margin-right: 30px;
+  width: 40px;
+}
+
+
