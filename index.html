@@ -14,9 +14,19 @@
 </head>
 
 <body>
-    <nav role="navigation">
-        <img src="images/logo.png" alt="logo" class="logo">
-        <img src="images/hamburger.png" alt="hamburger icon" class="hamburger">
+    <nav role="navigation" class ="topnav" id="myTopnav">
+        <div class="homeContainer">
+            <a href="#home" class="active"><img src="images/logo.png" alt="logo" class="logo"></a>
+        </div>
+        <div class="linkContainer">
+            <a href="#bioSection">About Me</a>
+            <a href="#skillsSection">Skills</a>
+            <a href="#projectsSection">Projects</a>
+            <a href="#contactSection">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
+        </div>
+          <img src="images/hamburger.png" alt="hamburger icon" class="hamburger">
+        </a>
     </nav>
     <main role="main">
         <header role="banner" class="hero">
@@ -29,7 +39,7 @@
 
         <section class="section bioSection">
             <h3 class="sectionHeader">ABOUT ME</h3>
-            
+            <hr>
             <p class="bio">
                 I am a Web Developer and current student of the Full Stack Web Development bootcamp at <a href="https://www.thinkful.com/" class="thinkful">Thinkful</a>. After spending five years in IT Risk and Security consulting, I discovered that my true passion lies in actually building the technologies that shape the world in which we live. I love to code, solve complex problems, and learn new languages, libraries, and frameworks. I’m always up for a challenge!
             </p> 
@@ -89,7 +99,7 @@
             </div>
             <hr>
         </section>  
-        
+
         <section class="section projectsSection"> 
             <h3 class="sectionHeader projectsSectionHeader">PROJECTS</h3>
             <div class="project">
@@ -190,7 +200,8 @@
             </div>
         </section>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
