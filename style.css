@@ -14,6 +14,8 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 /* Style the links inside the navigation bar */
@@ -23,7 +25,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 
@@ -33,7 +35,7 @@ a.active {
   background-color: rgb(250, 250, 250);
   padding: 0;
   margin-left: 10px;
-  margin-top: 6px;
+  margin-top: 10px;
   margin-bottom: 2px;
 }
 
@@ -50,8 +52,9 @@ a.icon {
   display: none;
 }
 
-
-
+.linkContainer {
+  float: right;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -108,6 +111,9 @@ header {
   opacity: 0.8;
   text-align: center;
   font-weight: lighter;
+  color: rgb(248, 247, 246);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+  text-transform: uppercase;
 }
 
 .subtitle {
@@ -117,15 +123,7 @@ header {
   opacity: 0.8;
   text-align: center;
   font-weight: lighter;
-}
-
-hr {
-  border: none;
-  height: 1px;
-  color:white; 
-  background-color: white; 
-  width: 17%;
-  opacity: 0.7;
+  color: black;
 }
 
 section hr {
@@ -162,7 +160,7 @@ section {
   padding-left: 15px;
   padding-right: 15px;
 }
-.bio, .projectDescription, .contactBlurb {
+.bioParagraph, .projectDescription, .contactBlurb {
   font-size: 16px;
   text-align: center;
 }
@@ -193,11 +191,17 @@ section {
   color: rgb(66, 85, 92);
 }
 
+.bioContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
 .profpic {
   width: 100px;
   border-radius: 50%;
-  margin: 16px auto 12px auto;
-
+  margin: 25px auto 12px auto;
 }
 
 .section {
@@ -221,6 +225,11 @@ section {
   margin-top: 15px;
   margin-bottom: 10px;
   font-size: 22px;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
@@ -259,11 +268,11 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 45px 15px 45px;
+  padding: 25px 15px 45px;
 }
 
 .project:nth-child(2) {
-  background-color: rgb(93, 133, 141);
+  background-color: rgba(98, 141, 150, 0.950);
 }
 
 .project:nth-child(3) {
@@ -271,19 +280,28 @@ section {
 }
 
 .project:nth-child(4) {
-  background-color: rgba(126, 154, 163, 0.781);
+  background-color: rgba(126, 154, 163, 0.884);
 }
 
 .project:nth-child(5) {
-  background-color: rgba(126, 154, 163, 0.699);
+  background-color: rgba(126, 154, 163, 0.725);
 }
 
 .projectsSectionHeader {
   margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectHeader {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
+  font-size: 25px;
 }
 
 .projectScreenshot {
@@ -298,7 +316,7 @@ section {
 .languageList {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   margin-top: 20px;
 }
 
@@ -357,4 +375,113 @@ section {
   width: 40px;
 }
 
+@media screen and (min-width: 485px) {
+  .contactSection {
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .bioSection {
+    margin-top: 35px;
+  }
+  .bioContainer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .profpic {
+    width: 250px;
+    margin: 0 50px 0 0;
+  }
+  .skillsContainer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .project {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 12% 2% 12%;
+    justify-content: space-around;
+  }
+  .projectDetails {
+    max-width: 80%;
+    margin-right: 10px;
+  }
+  .screenshotContainer {
+    min-width: 400px;
+  }
+  .projectScreenshot {
+    width: 100%;
+  }
+  .projectDescription{
+    max-width: 400px;
+    font-size: 20px;
+  }
+  .projectTechSpecs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-width: 360px;
+    height: 268px;
+    margin-left: 10px;
+  }
+  .button {
+    width: 120px;
+  }
+  .languageSymbol {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 910px) {
+  .hero {
+    padding-top: 100px;
+  } 
+  .title {
+    font-size: 200%;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(248, 247, 246);
+    letter-spacing: 2px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.200);
+  }
+  .subtitle {
+    font-size: 150%;
+    font-weight: 600;
+    color: black;
+    letter-spacing: 1px;
+  }
+  .bioParagraph {
+    font-size: 20px;
+  }
+  .sectionHeader {
+    font-size: 30px;
+  }
+  .skillHeader {
+    font-size: 25px;
+  }
+  .projectsSectionHeader {
+    font-size: 35px;
+  }
+  .projectHeader {
+    font-size: 30px;
+  }
+  .topnav a {
+    font-size: 22px;
+  }
+  .logo {
+    width: 36px;
+    height: 36px;
+  }
+  a.active {
+    margin-top: 8px;
+  }
+}
 
