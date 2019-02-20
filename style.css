@@ -47,6 +47,12 @@ a.icon {
   margin-bottom: 2px;
 }
 
+span {
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+}
+
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
   display: none;
@@ -80,6 +86,11 @@ a.icon {
   }
   .linkContainer{
     float: left;
+  }
+  span {
+    font-size: 14px;
+    bottom: 12px;
+    left: 7px;
   }
 }
 
@@ -133,6 +144,8 @@ section hr {
   background-color: gray; 
   width: 80%;
   opacity: 0.7;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 h3 {
@@ -230,6 +243,7 @@ section {
 .skillsContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .row {
@@ -329,7 +343,7 @@ section {
 .projectButtons {
   margin-top: 20px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .button {
@@ -338,7 +352,7 @@ section {
   color: black;
   padding: 5px 0;
   text-decoration: none;
-  width: 80px; 
+  width: 120px; 
   text-align: center;
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
@@ -400,11 +414,10 @@ section {
   }
   .skillsContainer {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
   .project {
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
     padding: 0 12% 2% 12%;
     justify-content: space-around;
@@ -426,10 +439,10 @@ section {
   .projectTechSpecs {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     min-width: 360px;
     height: 268px;
-    margin-left: 10px;
+    margin-left: 30px;
   }
   .button {
     width: 120px;
@@ -482,6 +495,10 @@ section {
   }
   a.active {
     margin-top: 8px;
+  }
+  span {
+    bottom: 11px;
+    left: 11px;
   }
 }
 
