@@ -395,8 +395,12 @@ section {
 .contactSpan {
   position: absolute;
   width: 100px;
-  left: 75px;
+  left: 65px;
   top: 3px;
+}
+
+.linkedin {
+  margin-top: 11px;
 }
 
 @media screen and (min-width: 850px) {
