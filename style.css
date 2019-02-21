@@ -47,7 +47,7 @@ a.icon {
   margin-bottom: 2px;
 }
 
-span {
+.logoName {
   position: relative;
   bottom: 10px;
   left: 10px;
@@ -87,7 +87,7 @@ span {
   .linkContainer{
     float: left;
   }
-  span {
+  .logoName {
     font-size: 14px;
     bottom: 12px;
     left: 7px;
@@ -174,7 +174,7 @@ section {
   padding-right: 15px;
 }
 .bioParagraph, .projectDescription, .contactBlurb {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
 }
 
@@ -255,7 +255,6 @@ section {
 .skillSymbol {
   width: 80px;
   height: 80px;
-
 }
 
 .backEnd, .tools {
@@ -267,7 +266,6 @@ section {
   display: block;
   text-align: left;
   width: 130px;
-
 }
 
 .skillList > li {
@@ -360,6 +358,7 @@ section {
 
 .contactSection {
   margin-top: 20px;
+  align-items: center;
 }
 
 .contactHeader {
@@ -368,10 +367,12 @@ section {
 
 .contactMethods {
   list-style: none;
+  padding-left: 0;
 }
 
 .contactMethod {
   margin-top: 10px;
+  position: relative;
 }
 
 .contactLink, .contactSymbol {
@@ -381,18 +382,21 @@ section {
 .contactLink {
   text-decoration: none;
   color: black;
+  width: 250px;
+  position: relative;
+  display: block;
 }
 
-.contactSymbol {
-  display: inline-block;
+.fa-envelope, .fa-github, .fa-linkedin {
+  font-size: 34px;
   margin-right: 30px;
-  width: 40px;
 }
 
-@media screen and (min-width: 485px) {
-  .contactSection {
-    align-items: center;
-  }
+.contactSpan {
+  position: absolute;
+  width: 100px;
+  left: 75px;
+  top: 3px;
 }
 
 @media screen and (min-width: 850px) {
@@ -416,6 +420,9 @@ section {
     flex-direction: row;
     justify-content: space-around;
   }
+  .skillList{
+    padding-left: 60px;
+  }
   .project {
     flex-direction: row;
     align-items: center;
@@ -432,9 +439,11 @@ section {
   .projectScreenshot {
     width: 100%;
   }
+  .bioParagraph, .projectDescription, .contactBlurb {
+    font-size: 20px;
+  }
   .projectDescription{
     max-width: 400px;
-    font-size: 20px;
   }
   .projectTechSpecs {
     display: flex;
@@ -471,9 +480,6 @@ section {
     color: black;
     letter-spacing: 1px;
   }
-  .bioParagraph {
-    font-size: 20px;
-  }
   .sectionHeader {
     font-size: 30px;
   }
@@ -496,7 +502,7 @@ section {
   a.active {
     margin-top: 8px;
   }
-  span {
+  .logoName {
     bottom: 11px;
     left: 11px;
   }
