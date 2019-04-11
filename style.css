@@ -265,7 +265,7 @@ section {
 .skillList {
   display: block;
   text-align: left;
-  width: 130px;
+  width: 200px;
 }
 
 .skillList > li {
