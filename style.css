@@ -416,6 +416,15 @@ section {
   margin-top: 11px;
 }
 
+@media screen and (min-width: 370px) {
+  .screenshotContainer {
+    width: 300px;
+  }
+  .projectScreenshot {
+    width: 300px;
+  }
+}
+
 @media screen and (min-width: 850px) {
   .bioSection {
     margin-top: 35px;
@@ -526,15 +535,6 @@ section {
   .logoName {
     bottom: 11px;
     left: 11px;
-  }
-}
-
-@media screen and (min-width: 370px) {
-  .screenshotContainer {
-    width: 300px;
-  }
-  .projectScreenshot {
-    width: 300px;
   }
 }
 
